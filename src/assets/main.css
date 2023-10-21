@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Product Sans", sans-serif;
+}
+body {
+  font-size: 62.5%;
+  background-color: #082144;
+  color: whitesmoke;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.px {
+  padding: 0px 16px 0px 16px;
+}
+.py {
+  padding: 12px 0px 12px 0px;
+}
+.btn {
+  border: none;
+  border-radius: 6px;
+  color: whitesmoke;
+  background: #30a473;
+  width: 120px;
+  height: 40px;
+
+  font-size: 1.1rem;
+}
+.mt {
+  margin-top: 7rem;
+}
