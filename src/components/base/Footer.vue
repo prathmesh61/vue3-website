@@ -1,15 +1,25 @@
 <template>
-  <footer class="container">
-    <section class="px footer-wrapper mt">
-      <div class="box-1">
+  <footer class="bg-white">
+    <section class="container footer-wrapper mt">
+      <div class="footer-logo">
         <h2>Frase</h2>
         <p>Frase is transforming SEO and content creation with AI.</p>
+      </div>
+      <div class="footer-links">
+        <FooterLink v-for="item in home" :item="item" :key="item.name" />
+      </div>
+      <div class="footer-links">
+        <FooterLink v-for="item in resource" :item="item" :key="item.name" />
+      </div>
+      <div class="footer-links">
+        <FooterLink v-for="item in company" :item="item" :key="item.name" />
       </div>
     </section>
   </footer>
 </template>
 
 <script setup>
+import FooterLink from "../common/FooterLink.vue";
 const home = [
   { name: "Home", link: "/home" },
   { name: "Services", link: "/services" },
@@ -33,4 +43,33 @@ const company = [
 ];
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.bg-white {
+  background: #fff;
+  color: #111;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-logo h2 {
+  font-size: 1.5rem;
+}
+.footer-logo p {
+  font-size: 1rem;
+}
+.footer-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+</style>

@@ -22,11 +22,11 @@ const props = defineProps(["testimonial"]);
   display: flex;
   align-items: center;
   gap: 1rem;
-  max-width: 370px;
+  max-width: 340px;
 }
 .testimonial-img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   border-radius: 10rem;
 }
