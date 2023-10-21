@@ -27,7 +27,7 @@ body {
   background: #30a473;
   width: 120px;
   height: 40px;
-
+  cursor: pointer;
   font-size: 1.1rem;
 }
 .mt {
