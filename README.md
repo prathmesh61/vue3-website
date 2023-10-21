@@ -1,5 +1,7 @@
 # vue3-website
 
+![Vue-website](https://github.com/prathmesh61/vue3-website/assets/104343605/67a126e9-057b-4b59-bfc7-5d576a4bfcd4)
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
